@@ -91,23 +91,41 @@ img{
             d:500
         })
     }
-    prev.onclick = function(){
-        num --;
-        if(num < 0){
-            ul.style.left = - len/2 * w +'px';
-            num = len/2 - 1;
-        }
-        move({
-            el:ul,
-            attr:{
-                left: - num * w
-            },
-            d:500
-        })
-    }
-
-   
-
+//  prev.onclick = function(){
+//      num --;
+//      if(num < 0){
+//          ul.style.left = - len/2 * w +'px';
+//          num = len/2 - 1;
+//      }
+//      move({
+//          el:ul,
+//          attr:{
+//              left: - num * w
+//          },
+//          d:500
+//      })
+//  }
+	
+//	var ul = document.getElementById('ul')//外面最大的ul
+//	var lis = document.getElementsByTagName('li')//每一个li
+// 	var next = document.querySelector('#next')//下一个
+// 	var next = document.querySelector('#prev')//上一个
+// 	var num = 0
+// 	var w = 448
+// 	ul.innerHTML += ul.innerHTML
+// 	var len = lis.length
+// 	
+// 	ul.style.width = w * len + 'px'
+//	next.onclick = function(){
+//		num ++
+//		move({
+//			el:ul,
+//          attr:{
+//              left: - num * w
+//          },
+//          d:500
+//		})
+//	}
 
 </script>
 </body>
